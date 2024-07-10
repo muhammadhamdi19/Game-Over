@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Games</title>
+  </head>
+  <body>
+<div class="loading d-none d-flex justify-content-center align-items-center ">
+  <div class="loader"></div>
+</div>
+    
+
+    <section class="home">
+      <header>
+        <img src="./images/wraper.png" alt="game photo" class="w-100" />
+      </header>
+      <nav
+        class="navbar navbar-expand-lg mb-3 position-sticky top-0 z-3 col-md-6 col-lg-9 rounded-4 m-auto"
+      >
+        <div class="container ps-5 pe-5">
+          <a class="navbar-brand mb-0" href="#">
+            <img src="./images/logo-sm.png" alt="logo" />
+            GAME REVIEWS
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" 
+                  data-category="mmorpg">MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="shooter">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="sailing">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="permadeath">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="superhero">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-category="pixel">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="games py-5">
+        <div class="container">
+          <div class="row show-games g-4"></div>
+           
+      </section>
+    </section>
+
+    <section class="details position-absolute top-0 end-0 start-0 bottom-0 py-5 d-none">
+      <div class="container">
+        <div class=" exit-details d-flex justify-content-between">
+          <h2>Details Game</h2> 
+          <i class="fa-solid fa-xmark fa-2x close"></i>
+        </div>
+        <div class="row show-details mt-4 g-4">
+         
+        </div>
+      </div>
+    </section>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./JS/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+img{
+  vertical-align: middle;
+}
+
+p,a,h1,h2,h3,h4,h5,h6,span{
+  font-family: "Comfortaa", sans-serif;
+  color: #fff;
+}
+
+body{
+  background-color: #272b30;
+}
+
+header img{
+  object-fit: cover;
+  max-height: 30vh;
+}
+
+.navbar{
+  background-color: #3a497b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: -35px !important;
+}
+
+.navbar-brand img{
+  max-width: 40px;
+}
+
+.navbar-brand{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.navbar ul li a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.navbar ul li .active{
+  color: #09c !important;
+}
+
+.navbar ul li a:hover{
+  color: #09c;
+}
+
+.game-card{
+  border: 1px solid #202328;
+  height: 380px;
+  word-wrap: break-word;
+  position: relative;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  cursor: pointer;
+}
+
+.game-card figure{
+  filter: grayscale(0.7);
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -webkit-filter: grayscale(0.7);
+}
+
+.game-card figure img{
+  position: relative;
+  z-index: -1;
+  
+}
+
+.game-card .title-free h3{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+.game-card .title-free span{
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  background-color: #4a6792;
+  padding: 8px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.game-card .sm-desc{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  opacity: .5;
+  min-height: 63px;
+}
+
+.game-card footer span{
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  background-color: #32383e;
+  padding: 4px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.game-card::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #202328;
+  left: 0;
+  bottom: 50px;
+}
+
+.game-card:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.game-card:hover figure{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.game-card:hover .title-free span{
+  background-color: #0d6efd;
+}
+
+.details{
+  background-color: #272b30;
+  z-index: 99999;
+  
+}
+
+.details .exit-details h2,
+.details .game-details h3{
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.details .exit-details i {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+
+.details .exit-details i:hover{
+  opacity: 0.7;
+}
+
+.details .game-details .span{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.details .game-details .span span{
+  color: #000;
+  padding-inline: 6px;
+  padding-block: 2px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  background-color: #0dcaf0;
+  font-size: 12px;
+  line-height:12px;
+  font-weight: 700;
+}
+
+.details .game-details a{
+  padding: 10px;
+  border: 1px solid #ffc107;
+  font-size: 16px;
+  line-height:24px;
+  font-weight: 400;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+
+.details .game-details a:hover{
+  background-color: #ffc107;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background-color: rgba(0, 0, 0, 0.35);
+  
+}
+.loader {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #514b82;
+  -webkit-mask: radial-gradient(circle closest-side at 50% 40%,#0000 94%, #000);
+  transform-origin: 50% 40%;
+  animation: l25 1s infinite linear;
+}
+@keyframes l25 {
+  100% {transform: rotate(1turn)}
+}
